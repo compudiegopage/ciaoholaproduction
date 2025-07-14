@@ -1,0 +1,396 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+:root {
+  --fondo-claro: #cfcdcc;
+  --detalle: #7d7976;
+  --texto: #222;
+  --crema: #f3eee7;
+  --verde: #2e7d32;
+  --rojo: #c62828;
+  --blanco: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  background-color: var(--fondo-claro);
+  color: var(--texto);
+}
+
+nav {
+  background: var(--detalle);
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.logo .ciao {
+  color: var(--crema);
+}
+
+.logo .hola {
+  margin-left: -10px;
+  color: var(--detalle);
+  background: white;
+  padding: 0 4px;
+  border-radius: 3px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background: white;
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.menu a,
+.menu button {
+    text-decoration: none;
+
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.menu .lang {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 3rem;
+  background: var(--crema);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+#sobre-mi {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#sobre-mi img {
+  max-width: 250px;
+  border-radius: 10px;
+}
+
+
+
+.card {
+  background: var(--crema);
+  padding: 1.2rem;
+  border: 1px solid var(--detalle);
+  border-radius: 10px;
+}
+
+.card:nth-child(even) h3 {
+  color: var(--verde);
+}
+
+.card:nth-child(odd) h3 {
+  color: var(--rojo);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto; /* CENTRA el formulario horizontalmente */
+
+}
+
+input, textarea {
+  padding: 0.75rem;
+  border: 1px solid var(--detalle);
+  border-radius: 8px;
+}
+
+button[type="submit"] {
+  background: var(--detalle);
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#linktree-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--detalle);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  text-decoration: none;
+}
+#whatsapp-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  padding: 0.8rem;
+  border-radius: 50%;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+#contacto h2 {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .menu {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  flex-direction: column;
+  background: var(--detalle);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.2s ease;
+  padding: 0;
+  }
+
+  .menu.active {
+    display: flex;
+      max-height: 500px;
+  padding: 1rem;
+  }
+}
+.cards-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.ciao {
+  color: #2e7d32; /* verde */
+  font-weight: bold;
+}
+
+.hola {
+  color: #c62828; /* rojo */
+  font-weight: bold;
+}
+.resaltado {
+  color: #c62828; /* rojo o cualquier color que quieras */
+  font-weight: bold;
+}
+#inicio {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.logo-inicio {
+  width: 250px;
+  height: auto;
+  margin-bottom: 1rem;
+  transition: width 0.3s ease;
+}
+
+/* Tamaño más grande para pantallas grandes */
+@media (min-width: 768px) {
+  .logo-inicio {
+    width: 500px;
+  }
+}
+
+#inicio h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+#inicio h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+  color: #555;
+}
+
+#inicio p {
+  font-size: 1rem;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.italiano {
+  color: green;
+}
+
+.espanol {
+  color: red;
+}
+.foto {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* borde redondeado suave */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* sombra suave */
+}
+
+.logoNav img {
+  height: 50px;   /* o el tamaño que quieras */
+  width: auto;
+  object-fit: contain;
+}
+.footer-credito {
+  text-align: right;
+  background-color: var(--detalle);
+  color: white;
+  padding: 0.5rem 1rem; /* 🔽 más bajo */
+  font-size: 0.85rem;
+}
+
+.footer-credito a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-credito a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .servicios-container {
+    display: block;
+    padding: 1rem;
+  }
+
+  /* Imagen al 100%, bajita, justo después del h1 */
+  .servicios-img {
+    width: 100%;
+    max-height: 150px;
+    height: auto;
+    margin: 1rem 0;
+    order: 1;
+    display: block;
+  }
+
+  /* Forzar que h1 sea el primero */
+  #servicios > h1 {
+    order: 0;
+  }
+}
+#servicios2 {
+  display: flex;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--crema);
+  border-radius: 10px;
+  align-items: flex-start; /* que se alineen arriba */
+}
+
+/* Columna de texto */
+.servicios-texto {
+  flex: 1 1 60%;
+}
+
+/* Columna imagen */
+.servicios-imagen {
+  flex: 1 1 35%;
+}
+
+.servicios-imagen img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 10px;
+  display: block;
+}
+
+/* Responsive: en pantallas pequeñas apilar */
+@media (max-width: 768px) {
+  #servicios {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .servicios-imagen {
+    margin-top: 1rem;
+  }
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+img:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+#whatsapp-btn {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.logo-inicio {
+  animation: aparecer 1s ease-out;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
