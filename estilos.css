@@ -483,3 +483,25 @@ img:hover {
   margin-top: 0.2rem;     /* achica separación superior */
   margin-bottom: 0.4rem;  /* achica separación inferior */
 }
+.matriculas {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.boton-matricula {
+  background-color: #462cb8; /* azul */
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.boton-matricula:hover {
+  background-color: #0056b3; /* azul más oscuro al pasar el mouse */
+}
+
