@@ -441,3 +441,26 @@ img:hover {
   height: 20px;
   object-fit: contain;
 }
+.loader {
+  border: 4px solid #f3eee7;
+  border-top: 4px solid var(--detalle);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  animation: spin 1s linear infinite;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.status-msg {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: var(--verde);
+}

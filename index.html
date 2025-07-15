@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="estilos.css" />
   <script src="script.js" defer></script>
   <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
 </head>
 <body>
   <nav>
@@ -159,20 +161,27 @@ trámites de ciudadanía italiana.  </p>
   <h2 data-key="contactoTitulo">Estoy a disposición para resolver cualquier consulta sobre
 mis servicios de traducción.</h2>
 
-  <form>
+<h2 data-key="contactoTitulo">Contacto</h2>
+  <form id="formulario-contacto">
     <label data-key="formNombreLabel">Nombre</label>
-    <input type="text" required />
+    <input type="text" id="name" name="name" required />
 
     <label data-key="formEmailLabel">Email</label>
-    <input type="email" required />
+    <input type="email" id="email" name="email" required />
 
     <label>Teléfono</label>
-    <input type="tel" required />
+    <input type="tel" id="telefono" name="telefono" />
 
     <label data-key="formMensajeLabel">Mensaje</label>
-    <textarea rows="5" required></textarea>
+    <textarea rows="5" id="message" name="message" required></textarea>
 
     <button type="submit" data-key="formEnviarBtn">Enviar</button>
+    <div id="form-loader" class="loader" style="display: none;"></div>
+    <div id="form-status" class="status-msg"></div>
+
+    <!-- feedback -->
+    <div id="loader" style="margin-top: 1rem;"></div>
+    <div id="estado-envio"></div>
   </form>
 
   <div class="info-contacto">

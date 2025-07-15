@@ -32,6 +32,85 @@ window.addEventListener("scroll", () => {
 
   elements.forEach(el => observer.observe(el));
 
+(function () {
+  emailjs.init("w6D6hUEHM0tTXaJjc"); // Tu PUBLIC KEY
+})();
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("formulario-contacto");
+  const loader = document.getElementById("loader");
+  const estado = document.getElementById("estado-envio");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    loader.innerHTML = "<div class='loader'></div>";
+    estado.innerHTML = "";
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const telefono = document.getElementById("telefono").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    const emailValido = /\w+@\w+\.\w+/.test(email);
+
+    if (!name || !email || !message) {
+      loader.innerHTML = "";
+      estado.innerHTML = "<div style='color:red;'>Los campos con * son obligatorios.</div>";
+      return;
+    }
+
+    if (!emailValido) {
+      loader.innerHTML = "";
+      estado.innerHTML = "<div style='color:red;'>Email inválido.</div>";
+      return;
+    }
+
+    emailjs.send("service_iyucybu", "template_or5qxx5", {
+      title: "Nuevo mensaje de contacto",
+      name: document.getElementById("name").value,
+      message: document.getElementById("message").value,
+      telefono: document.getElementById("telefono").value,
+      email: document.getElementById("email").value 
+    }).then(
+      function (response) {
+        loader.innerHTML = "";
+        estado.innerHTML = "<div style='color:green;'>Mensaje enviado correctamente.</div>";
+        form.reset();
+      },
+      function (error) {
+        loader.innerHTML = "";
+        estado.innerHTML = "<div style='color:red;'>Hubo un error al enviar el mensaje.</div>";
+        console.error("Error:", error);
+      }
+    );
+  });
+});
+const loader = document.getElementById("form-loader");
+const status = document.getElementById("form-status");
+
+function enviarFormulario() {
+  loader.style.display = "block";
+  status.innerText = "";
+
+  emailjs.send("service_v4zprfv", "template_or5qxx5", {
+    title: "Contacto",
+    name: nombre.value,
+    email: correo.value,
+    telefono: telefono.value,
+    message: mensaje.value,
+  }).then(() => {
+    loader.style.display = "none";
+    status.innerText = "✅ Mensaje enviado correctamente";
+    formulario.reset();
+  }).catch(() => {
+    loader.style.display = "none";
+    status.innerText = "❌ Error al enviar el mensaje";
+    status.style.color = "var(--rojo)";
+  });
+}
+
+
 // Cambio de idioma con banderas
 const langEs = document.getElementById("lang-es");
 const langIt = document.getElementById("lang-it");
