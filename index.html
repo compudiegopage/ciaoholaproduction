@@ -16,7 +16,7 @@
   <nav>
     <div class="logoNav">
       <a href="#">
-        <img src="img/logo.jpeg" alt="home">
+        <img class = "logo-img" src="img/logo.jpeg" alt="home">
       </a>    </div>
     <div class="hamburger" aria-label="Menú">
       <div></div><div></div><div></div>
@@ -47,7 +47,7 @@
   <h1 data-key="tituloPrincipal">Traducciones</h1>
 
 <h2 data-key="subtitulo">
-  <span class="italiano">Italiano</span> - <span class="espanol">Español</span>
+  <span class="ciao">Italiano</span> - <span class="hola">Español</span>
 </h2>
 
   <p data-key="bannerTexto">
@@ -155,19 +155,48 @@ trámites de ciudadanía italiana.  </p>
       </section>
     </section>
 
-    <section id="contacto">
-      <h2 data-key="contactoTitulo">Contacto</h2>
-      <form>
-        <label data-key="formNombreLabel">Nombre</label>
-        <input type="text" required />
-        <label data-key="formEmailLabel">Email</label>
-        <input type="email" required />
-        <label data-key="formMensajeLabel">Mensaje</label>
-        <textarea rows="5" required></textarea>
-        <button type="submit" data-key="formEnviarBtn">Enviar</button>
-      </form>
-      
-    </section>
+<section id="contacto">
+  <h2 data-key="contactoTitulo">Estoy a disposición para resolver cualquier consulta sobre
+mis servicios de traducción.</h2>
+
+  <form>
+    <label data-key="formNombreLabel">Nombre</label>
+    <input type="text" required />
+
+    <label data-key="formEmailLabel">Email</label>
+    <input type="email" required />
+
+    <label>Teléfono</label>
+    <input type="tel" required />
+
+    <label data-key="formMensajeLabel">Mensaje</label>
+    <textarea rows="5" required></textarea>
+
+    <button type="submit" data-key="formEnviarBtn">Enviar</button>
+  </form>
+
+  <div class="info-contacto">
+    <p>
+      <img src="img/email.png" alt="Email" class="icono-contacto" />
+      traductoraitaliano@hotmail.com
+    </p>
+    <p>
+      <img src="img/telefono.png" alt="Teléfono" class="icono-contacto" />
+      +54 9 11 6594 9569
+    </p>
+    <p>
+      <img src="img/ubi.png" alt="Ubicación" class="icono-contacto" />
+      Quilmes - Ranelagh (Argentina)
+    </p>
+    <p>
+      <img src="img/horarios.png" alt="Horarios" class="icono-contacto" />
+      Lunes a Viernes: 14:00 - 18:00<br />
+      Sábados: 9:00 - 13:00
+    </p>
+  </div>
+</section>
+
+
   </main>
 
   <a href="https://wa.me/5491123456789" id="whatsapp-btn" target="_blank">
