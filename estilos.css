@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
 
 :root {
-  --fondo-claro: #cfcdcc;
-  --detalle: #7d7976;
+  --fondo-claro: #fff;
+  --detalle: #462cb8;
   --texto: #222;
   --crema: #f3eee7;
   --verde: #2e7d32;
@@ -16,10 +16,13 @@ body {
   font-family: 'Raleway', sans-serif;
   background-color: var(--fondo-claro);
   color: var(--texto);
-  text-align: justify;
+  text-align: left;
 }
 body {
-  text-align: justify;
+  text-align: left;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 #inicio {
@@ -28,7 +31,7 @@ body {
 
 
 nav {
-  background: var(--detalle);
+  background: var(--crema);
   color: white;
   padding: 1rem;
   display: flex;
@@ -81,7 +84,7 @@ nav {
 
   background: none;
   border: none;
-  color: white;
+  color: black;
   font-weight: bold;
   cursor: pointer;
   font-size: 1rem;
@@ -107,6 +110,8 @@ section {
   background: var(--crema);
   padding: 2rem;
   border-radius: 10px;
+    scroll-margin-top: 100px; /* Ajustalo según la altura real del nav */
+
 }
 
 #sobre-mi {
@@ -126,7 +131,7 @@ section {
 .card {
   background: var(--crema);
   padding: 1.2rem;
-  border: 1px solid var(--detalle);
+  border: 1px solid var(--verde);
   border-radius: 10px;
 }
 
@@ -135,7 +140,7 @@ section {
 }
 
 .card:nth-child(odd) h3 {
-  color: var(--rojo);
+  color: var(--verde);
 }
 
 form {
@@ -235,7 +240,6 @@ button[type="submit"] {
 .logo-inicio {
   width: 250px;
   height: auto;
-  margin-bottom: 1rem;
   transition: width 0.3s ease;
 }
 
@@ -248,18 +252,19 @@ button[type="submit"] {
 
 #inicio h1 {
   font-size: 2rem;
-  margin-bottom: 0.5rem;
+  
+    font-family: 'Book Antiqua', Palatino, serif;
+
 }
 
 #inicio h2 {
   font-size: 1.5rem;
-  margin-bottom: 0.5rem;
   font-weight: normal;
   color: #555;
 }
 
 #inicio p {
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #333;
   max-width: 600px;
   margin: 0 auto;
@@ -308,7 +313,12 @@ button[type="submit"] {
     display: block;
     padding: 1rem;
   }
-
+#inicio p {
+  font-size: 1rem;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto;
+}
   /* Imagen al 100%, bajita, justo después del h1 */
   .servicios-img {
     width: 100%;
@@ -402,7 +412,6 @@ img:hover {
 }
 
 .logo-img{
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
   border-radius: 0.5rem;
 }
 #contacto {
@@ -463,4 +472,14 @@ img:hover {
   margin-top: 1rem;
   font-weight: bold;
   color: var(--verde);
+}
+#inicio .logo-inicio {
+  margin-bottom: 0.5rem; /* reduce espacio debajo del logo */
+}
+
+#inicio h1,
+#inicio h2,
+#inicio p {
+  margin-top: 0.2rem;     /* achica separación superior */
+  margin-bottom: 0.4rem;  /* achica separación inferior */
 }

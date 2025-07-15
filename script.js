@@ -120,9 +120,9 @@ const textos = {
     inicio: "Inicio",
     sobreMi: "Sobre mí",
     servicios: "Servicios",
-    serviciosTitulo: "Servicios de traducción",
+    serviciosTitulo: "SERVICIOS DE TRADUCCIÓN",
     contacto: "Contacto",
-    tituloPrincipal: "Traducciones",
+    tituloPrincipal: "TRADUCCIONES",
     subtitulo: '<span class="ciao">Italiano</span> - <span class="hola">Español</span>',
     bannerTexto: "Servicios especializados para estudios jurídicos, escribanías y trámites de ciudadanía italiana.",
     contactoTitulo: "Contacto",
@@ -132,7 +132,7 @@ const textos = {
     formEnviarBtn: "Enviar",
     presentacionCorta: '¡Hola! Soy Carla, Traductora Pública de italiano, y la persona detrás de <span class="ciao">CIAO</span><span class="hola">HOLA</span>.',
     sobreMiParrafo1: 'Me especializo en traducciones con valor legal —ciudadanía italiana, actas, certificados y poderes—, donde la precisión y el conocimiento jurídico hacen la diferencia. Sé que una buena traducción no es solo pasar palabras, sino cuidar lo que para vos es importante. Por eso combino profesionalismo, trato cercano y mucha atención al detalle. Tu traducción está en buenas manos.',
-
+    masInfo:"Más Info"
   },
   it: {
     inicio: "Inizio",
@@ -140,7 +140,7 @@ const textos = {
     servicios: "Servizi",
     serviciosTitulo: "Servizi di traduzione",
     contacto: "Contatto",
-    tituloPrincipal: "Traduzioni",
+    tituloPrincipal: "TRADUZIONI",
     subtitulo: '<span class="ciao">Italiano</span> - <span class="hola">Spagnolo</span>',
     bannerTexto: "Traduzioni professionali per il mondo legale, notarile e per le pratiche di cittadinanza.",
     contactoTitulo: "Contatto",
@@ -148,6 +148,7 @@ const textos = {
     formEmailLabel: "Email",
     formMensajeLabel: "Messaggio",
     formEnviarBtn: "Invia",
+    masInfo:"Scopri di più",
     presentacionCorta: 'Dietro <span class="ciao">CIAO</span><span class="hola">HOLA</span> ci sono io: Carla, traduttrice con esperienza e passione per il dettaglio.',
     sobreMiParrafo1: ' Da diversi anni mi occupo di traduzioni con valore legale, in particolare per la cittadinanza italiana, atti, certificati, procure e altri documenti che richiedono precisione e conoscenza del linguaggio giuridico. So bene che una buona traduzione non è solo questione di parole, ma anche di fiducia, responsabilità e attenzione ai dettagli. Per questo, in CIAOHOLA unisco la mia formazione giuridica a un approccio umano e professionale, per farti sentire sempre accompagnato/a.'
   }
