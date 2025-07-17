@@ -3,7 +3,7 @@
 
 :root {
   --fondo-claro: #fff;
-  --detalle: #462cb8;
+  --detalle: #3A6EA5  ;
   --texto: #222;
   --crema: #f3eee7;
   --verde: #2e7d32;
@@ -512,7 +512,7 @@ img:hover {
 }
 
 .boton-matricula {
-  background-color: #462cb8; /* azul */
+  background-color: #3A6EA5 ; /* azul */
   align-items: center;
   text-align: center;
   color: white;
