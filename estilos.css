@@ -13,15 +13,19 @@
   --azulClaro: #8000ff;
   --beige: #f9f5f2;
   --celeste: #e2e8f0;
+  --carla: #a7bea9;
 
 }
 
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  font-family: 'Georgia', serif;
   background-color: var(--fondo-claro);
   color: var(--texto);
   text-align: left;
+  overflow-x: hidden;
+  width: 100%;
 }
 body {
   text-align: left;
@@ -107,9 +111,10 @@ nav {
 }
 
 .container {
-  max-width: 100vw;
-  margin: auto;
-  padding: 0rem;
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 section {
@@ -120,25 +125,11 @@ section {
 
 }
 
-#sobre-mi {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-  align-items: center;
-  text-align: center;
-  background-color: var(--celeste);
 
-}
-
-#sobre-mi img {
-  max-width: 250px;
-  border-radius: 10px;
-}
 
 
 
 .card {
-  background: var(--crema);
   padding: 1rem;
   border: 1px solid var(--verde);
   border-radius: 10px;
@@ -372,14 +363,23 @@ h2, h3 {
   border-radius: 10px;
   display: block;
 }
-#servicios{
-  background-color: var(--gris);
-
+#servicios {
+  /* sin background-color aquí */
+  background-color: #dce2d9;
+  width: 100%;            /* ancho total de ventana */
+  padding: 0;         /* espacio arriba y abajo */
+  margin: 0;  
 }
-#servicios4{
-        background-color: var(--detalle);
-
+#servicios .texto p {
+  font-size: 1.1rem;
+  color: #4a5a50;
+  letter-spacing: 0.02em;
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
+
+
+
 /* Responsive: en pantallas pequeñas apilar */
 @media (max-width: 768px) {
   #servicios {
@@ -503,26 +503,208 @@ img:hover {
   margin-top: 0.2rem;     /* achica separación superior */
   margin-bottom: 0.4rem;  /* achica separación inferior */
 }
+#sobre-mi {
+  width: 100%;            /* ancho total de ventana */
+  background-color: var(--celeste);  /* fondo claro */
+  padding: 0;         /* espacio arriba y abajo */
+  margin: 0;               /* nada de margen */
+}
+
+#sobre-mi .texto {
+  max-width: 80%;       /* ancho máximo del contenido */
+  margin: 0 auto;          /* centrado horizontal */
+  border-radius: 0;
+  padding: 1rem 3rem;
+  box-sizing: border-box;
+  color: #40514e;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sobre-mi img.foto {
+  width: 300px;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 0;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+
+#sobre-mi h2 {
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  font-size: 1.9rem;
+  color: #334e42;
+  flex-basis: 100%;
+  text-align: center;
+}
+
+#sobre-mi p[data-key="sobreMiParrafo1"] {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #4a5a50;
+  letter-spacing: 0.02em;
+  flex: 1 1 65%;
+}
+
+
+
+
+/* Botones matriculas centrados debajo del texto */
 .matriculas {
   display: flex;
-  justify-content: center;
   gap: 1rem;
-  margin-top: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+  padding-bottom: 2rem;
+  flex-basis: 100%;
 }
 
 .boton-matricula {
-  background-color: #3A6EA5 ; /* azul */
-  align-items: center;
-  text-align: center;
+  background-color: #7da18b;
   color: white;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
+  white-space: normal; /* Permite que el texto se divida en varias líneas */
+  padding: 0.7rem 1.3rem;  border-radius: 25px;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: bold;
   transition: background-color 0.3s ease;
+  box-shadow: 0 2px 6px rgba(125, 161, 139, 0.5);
+  max-width: 400px;
 }
 
 .boton-matricula:hover {
-  background-color: #0056b3; /* azul más oscuro al pasar el mouse */
+  background-color: #5e7b67;
+  box-shadow: 0 3px 10px rgba(94, 123, 103, 0.7);
+}
+#servicios .texto{
+  max-width: 80%;       /* ancho máximo del contenido */
+  margin: 0 auto;          /* centrado horizontal */
+  border-radius: 0;
+  padding: 1rem 3rem;
+  box-sizing: border-box;
+  color: #40514e;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#servicios4 {
+  background-color: var(--carla);
+  padding: 2rem 0; /* solo padding arriba y abajo */
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 0 auto;
+  color: #40514e;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#servicios4 > h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.9rem;
+  color: #334e42;
+  width: 100%;
+}
+
+#servicios4 > article.ciudadania-text {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 1rem 3rem;
+  box-sizing: border-box;
+  color: #40514e;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  /* Quitar display flex y align-items center */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  text-align: center; /* para centrar el texto, si querés */
+  font-size: 1.17rem; /* o el tamaño que uses en las otras secciones */
+}
+
+
+
+
+/* Contenedor de tarjetas como grid 3x2 */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Estilo para cada tarjeta */
+.card {
+  background: var(--crema);
+  padding: 1.2rem 1rem;
+  border: 1px solid var(--verde);
+  border-radius: 10px;
+  color: #40514e;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  font-family: 'Georgia', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.card h3 {
+  color: var(--verde);
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+/* Para que el texto dentro de la tarjeta quede legible y con separación */
+.card p, .card > :not(h3) {
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Responsive: en pantallas chicas apilar 1 columna */
+@media (max-width: 768px) {
+  #servicios4 {
+    max-width: 95%;
+    padding: 1rem 1.5rem;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  #sobre-mi .texto,
+  #servicios .texto,
+  #servicios4 > article.ciudadania-text {
+    max-width: 95%;        /* Más ancho */
+    padding-left: 1rem;    /* Menos padding lateral */
+    padding-right: 1rem;
+    text-align: center;
+  }
+    #servicios4 > article.ciudadania-text {
+    max-width: 100%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+@media (max-width: 768px) {
+  #servicios4 {
+    max-width: 100%;
+    padding: 1rem;
+  }
 }
