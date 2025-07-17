@@ -110,6 +110,21 @@ function enviarFormulario() {
   });
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+  const boton = document.getElementById('acordeon-toggle');
+  const cuerpo = document.getElementById('acordeon-cuerpo');
+  const icono = boton.querySelector('.icono');
+
+  boton.addEventListener('click', () => {
+    if (cuerpo.style.display === 'block') {
+      cuerpo.style.display = 'none';
+      icono.textContent = '+';
+    } else {
+      cuerpo.style.display = 'block';
+      icono.textContent = '−';
+    }
+  });
+});
 
 // Cambio de idioma con banderas
 const langEs = document.getElementById("lang-es");

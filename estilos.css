@@ -9,11 +9,16 @@
   --verde: #2e7d32;
   --rojo: #c62828;
   --blanco: #fff;
+  --gris: #f1ece8;
+  --azulClaro: #8000ff;
+  --beige: #f9f5f2;
+  --celeste: #e2e8f0;
+
 }
 
 body {
   margin: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: var(--fondo-claro);
   color: var(--texto);
   text-align: left;
@@ -27,6 +32,8 @@ html {
 
 #inicio {
   text-align: center;
+    background: var(--beige);
+
 }
 
 
@@ -119,6 +126,8 @@ section {
   gap: 2rem;
   flex-wrap: wrap;
   align-items: center;
+  background-color: var(--celeste);
+
 }
 
 #sobre-mi img {
@@ -252,11 +261,12 @@ button[type="submit"] {
 
 #inicio h1 {
   font-size: 2rem;
-  
     font-family: 'Book Antiqua', Palatino, serif;
 
 }
-
+h2, h3 {
+  font-family: 'Lora', serif;
+}
 #inicio h2 {
   font-size: 1.5rem;
   font-weight: normal;
@@ -362,12 +372,20 @@ button[type="submit"] {
   border-radius: 10px;
   display: block;
 }
+#servicios{
+  background-color: var(--gris);
 
+}
+#servicios4{
+        background-color: var(--detalle);
+
+}
 /* Responsive: en pantallas pequeñas apilar */
 @media (max-width: 768px) {
   #servicios {
     flex-direction: column;
     padding: 1rem;
+
   }
 
   .servicios-imagen {
@@ -416,6 +434,8 @@ img:hover {
 }
 #contacto {
   text-align: center;
+    background-image: url('img/fondoDic.jpg');
+
 }
 
 #contacto form {
@@ -493,6 +513,8 @@ img:hover {
 
 .boton-matricula {
   background-color: #462cb8; /* azul */
+  align-items: center;
+  text-align: center;
   color: white;
   padding: 0.6rem 1.2rem;
   border-radius: 6px;
@@ -504,4 +526,3 @@ img:hover {
 .boton-matricula:hover {
   background-color: #0056b3; /* azul más oscuro al pasar el mouse */
 }
-
