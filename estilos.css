@@ -302,7 +302,7 @@ h2, h3 {
   object-fit: contain;
 }
 .footer-credito {
-  text-align: right;
+  text-align: center;
   background-color: var(--detalle);
   color: white;
   padding: 0.5rem 1rem; /* 🔽 más bajo */
