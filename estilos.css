@@ -126,6 +126,7 @@ section {
   gap: 2rem;
   flex-wrap: wrap;
   align-items: center;
+  text-align: center;
   background-color: var(--celeste);
 
 }
