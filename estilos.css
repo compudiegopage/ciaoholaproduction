@@ -14,6 +14,7 @@
   --beige: #f9f5f2;
   --celeste: #e2e8f0;
   --carla: #a7bea9;
+  --verde2: #7da18b;
 
 }
 
@@ -154,12 +155,12 @@ form {
 
 input, textarea {
   padding: 0.75rem;
-  border: 1px solid var(--detalle);
+  border: 1px solid var(--verde2); /* verde */
   border-radius: 8px;
 }
 
 button[type="submit"] {
-  background: var(--detalle);
+  background: var(--verde2); /* verde */
   color: white;
   border: none;
   padding: 0.75rem;
@@ -167,6 +168,7 @@ button[type="submit"] {
   cursor: pointer;
   font-weight: bold;
 }
+
 
 #linktree-btn {
   display: inline-block;
