@@ -81,7 +81,7 @@ nav {
 .hamburger div {
   width: 25px;
   height: 3px;
-  background: white;
+  background: var(--texto);
 }
 
 .menu {
@@ -93,6 +93,7 @@ nav {
 .menu a,
 .menu button {
     text-decoration: none;
+  font-family: 'Lora', serif;
 
   background: none;
   border: none;
@@ -295,7 +296,7 @@ h2, h3 {
 }
 .footer-credito {
   text-align: center;
-  background-color: var(--detalle);
+  background-color: #7da18b;
   color: white;
   padding: 0.5rem 1rem; /* 🔽 más bajo */
   font-size: 0.85rem;
@@ -367,7 +368,7 @@ h2, h3 {
 }
 #servicios {
   /* sin background-color aquí */
-  background-color: #dce2d9;
+  background-color: #e3f2fd;
   width: 100%;            /* ancho total de ventana */
   padding: 0;         /* espacio arriba y abajo */
   margin: 0;  
@@ -435,6 +436,7 @@ img:hover {
   border-radius: 0.5rem;
 }
 #contacto {
+  
   text-align: center;
     background-image: url('img/fondoDic.jpg');
 
@@ -465,6 +467,8 @@ img:hover {
   margin: 0.5rem 0;
   font-size: 1rem;
   line-height: 1.5;
+    font-family: 'Lora', serif;
+
 }
 
 .icono-contacto {
