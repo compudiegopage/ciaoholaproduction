@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
 :root {
   --fondo-claro: #fff;
   --detalle: #3A6EA5  ;
@@ -37,9 +37,28 @@ html {
 
 #inicio {
   text-align: center;
-    background: var(--beige);
-
+  padding: 2rem 1rem;
+  background-image: url('./img/diccionario.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
+
+@media (max-width: 767px) {
+  #inicio {
+    background-image: url('./img/diccCel.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+.inline-img {
+  height: 1em;         /* Igual que la altura de la línea de texto */
+  vertical-align: middle; /* Alinea verticalmente con el texto */
+  margin-left: 0.2em;  /* Un pequeño espacio a la izquierda */
+  margin-right: 0.2em; /* Opcional, espacio a la derecha */
+}
+
 
 
 nav {
@@ -53,7 +72,9 @@ nav {
   top: 0;
   z-index: 999;
 }
-
+.frase-final{
+  font-family: 'Lora', serif;
+}
 .logo {
   font-size: 2rem;
   font-weight: bold;
@@ -192,7 +213,15 @@ button[type="submit"] {
 
 #contacto h2 {
   text-align: center;
+  color: #4a5a50;
+  font-size: 3rem;
 }
+#contacto h3 {
+  text-align: center;
+  color: #4a5a50;
+  font-size: 1.5rem;
+}
+
 
 @media (max-width: 768px) {
   .hamburger {
@@ -255,7 +284,7 @@ button[type="submit"] {
 
 #inicio h1 {
   font-size: 2rem;
-    font-family: 'Book Antiqua', Palatino, serif;
+font-family: 'Quattrocento', serif;
 
 }
 h2, h3 {
@@ -434,6 +463,7 @@ img:hover {
 
 .logo-img{
   border-radius: 0.5rem;
+  
 }
 #contacto {
   
@@ -458,6 +488,7 @@ img:hover {
   margin-left: auto;
   margin-right: auto;
   text-align: left;
+  
 }
 
 .info-contacto p {
@@ -465,9 +496,9 @@ img:hover {
   align-items: center;
   gap: 0.75rem;
   margin: 0.5rem 0;
-  font-size: 1rem;
+  font-size: 1.4rem;
   line-height: 1.5;
-    font-family: 'Lora', serif;
+font-family: 'Quattrocento', serif;
 
 }
 
@@ -523,7 +554,7 @@ img:hover {
   padding: 1rem 3rem;
   box-sizing: border-box;
   color: #40514e;
-  font-family: 'Georgia', serif;
+font-family: 'Quattrocento', serif;
   line-height: 1.6;
   display: flex;
   flex-direction: column;
@@ -552,10 +583,11 @@ img:hover {
 #sobre-mi p[data-key="sobreMiParrafo1"] {
   margin-top: 0;
   margin-bottom: 2rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #4a5a50;
   letter-spacing: 0.02em;
   flex: 1 1 65%;
+  text-align: justify;
 }
 
 
@@ -713,4 +745,221 @@ img:hover {
     max-width: 100%;
     padding: 1rem;
   }
+}
+@media (min-width: 769px) {
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5rem; /* un poco más de espacio */
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    padding-right: 80px; /* para que las banderas no tapen */
+  }
+
+  .menu .lang {
+    position: absolute;
+    right: 0;
+    display: flex;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+}
+/* Por defecto (mobile) todo apilado */
+
+.contenido-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (min-width: 769px) {
+  /* La sección contenido-flex en fila */
+  .contenido-flex {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  /* Imagen a la izquierda */
+  .contenido-flex .foto {
+    flex: 0 0 40%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    object-fit: cover;
+  }
+
+  /* Texto + botones a la derecha */
+  .texto-y-botones {
+    flex: 1 1 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* separa párrafo y botones */
+  }
+
+  /* Para que los botones estén pegados abajo */
+  .matriculas {
+    margin-top: 1rem;
+  }
+}
+.servicios-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.titulo-grande h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: none; /* En minúscula */
+  margin: 0;
+  text-align: center;
+}
+
+
+.texto-servicio p {
+  font-family: 'Quattrocento', serif;
+
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Desktop layout */
+@media (min-width: 769px) {
+  .servicios-flex {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .titulo-grande {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .titulo-grande h1 {
+    font-size: 4rem;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .texto-servicio {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  .texto-servicio p {
+    padding-right: 1rem;
+        line-height: 2;
+
+  }
+}
+.intro-servicios {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  max-width: 900px;       /* igual que .cards-container */
+  margin: 0 auto;         /* para centrarlo */
+  box-sizing: border-box;
+}
+
+
+
+.intro-servicios > div {
+  width: 100%;
+}
+
+.intro-texto,
+.frase-contacto {
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.frase-contacto a {
+  color: var(--acento, #000);
+  text-decoration: none;
+}
+
+.frase-contacto a:hover {
+  text-decoration: underline;
+}
+
+/* Dos columnas a partir de pantallas medianas */
+@media (min-width: 768px) {
+  .intro-servicios {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+
+  .intro-servicios > div {
+    width: 50%;
+  }
+}
+
+#servicios4 h2 {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  text-align: center;
+}
+.ciudadania-text {
+  text-align: justify;
+  font-size: 1.3rem;
+}
+.solo-pc {
+  display: none;
+}
+
+.solo-mobile {
+  display: inline;
+}
+
+/* En pantallas grandes (PC), mostrar la versión con salto y ocultar la otra */
+@media (min-width: 768px) {
+  .solo-pc {
+    display: inline;
+  }
+
+  .solo-mobile {
+    display: none;
+  }
+}
+/* Por defecto (móvil): ocultar los saltos de línea <br> dentro del h1 en #servicios */
+#servicios h1 br {
+  display: none;
+  
+}
+
+/* En pantallas grandes (desktop) mostrar los saltos de línea */
+@media (min-width: 769px) {
+  #servicios h1 br {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .titulo-grande h1 {
+    font-size: 2rem; /* tamaño más chico solo en celulares */
+    
+  }
+}
+.texto-servicio p[data-key="sobreMiParrafo2"] {
+  padding-right: 1.5rem;                    /* espacio interno a la derecha para que el texto no quede pegado */
 }
