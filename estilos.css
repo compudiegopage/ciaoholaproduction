@@ -825,6 +825,7 @@ font-family: 'Quattrocento', serif;
   text-transform: none; /* En minúscula */
   margin: 0;
   text-align: center;
+  padding-left: 1rem;
 }
 
 
@@ -959,7 +960,7 @@ font-family: 'Quattrocento', serif;
 @media (max-width: 767px) {
   .titulo-grande h1 {
     font-size: 2rem; /* tamaño más chico solo en celulares */
-    
+    text-align: center;
   }
 }
 .texto-servicio p[data-key="sobreMiParrafo2"] {
