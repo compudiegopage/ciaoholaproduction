@@ -418,8 +418,7 @@ h2, h3 {
 @media (max-width: 768px) {
   #servicios {
     flex-direction: column;
-    padding: 1rem;
-
+    
   }
 
   .servicios-imagen {
@@ -964,7 +963,7 @@ font-family: 'Quattrocento', serif;
   }
 }
 .texto-servicio p[data-key="sobreMiParrafo2"] {
-  padding-right: 1.5rem;                    /* espacio interno a la derecha para que el texto no quede pegado */
+  padding: 0.8rem;                    /* espacio interno a la derecha para que el texto no quede pegado */
 }
 .fade-in .texto h2 {
   font-size: 2.2rem;
