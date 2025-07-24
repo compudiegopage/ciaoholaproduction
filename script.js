@@ -187,7 +187,9 @@ const textos = {
     contactoSubtitulo: 'Estoy a disposición para resolver cualquier consulta sobre mis servicios de traducción.',
     horarios: '<img src="img/horarios.png" alt="Horarios" class="icono-contacto" />Lunes a Viernes: 14:00 - 18:00<br />Sábados: 9:00 - 13:00',
     footerCreditos: 'Desarrollado por: <a href="https://www.compudiego.com.ar" target="_blank" rel="noopener noreferrer">CompuDiego</a>',
-    clientesTitulo: '<h2 style="text-align: center; color: #4a5a50;">Con <i>fiducia e cuore:</i> lo que cuentan mis clientes</h2>'
+    clientesTitulo: '<h2 style="text-align: center; color: #4a5a50;">Con <i>fiducia e cuore:</i> lo que cuentan mis clientes</h2>',
+    queres: '¿Querés empezar?',
+    distancia: '<a href="mailto:traductoraitaliano@hotmail.com"><em>Estoy a un mensaje de distancia.</em></a>',
 
   },
   it: {
@@ -246,7 +248,9 @@ const textos = {
     contactoSubtitulo: 'Sono a disposizione per rispondere a qualsiasi domanda sui miei servizi di traduzione.',
     horarios: '<img src="img/horarios.png" alt="Orari" class="icono-contacto" />Lunedì a Venerdì: 14:00 - 18:00<br />Sabato: 9:00 - 13:00',
     footerCreditos: 'Sviluppato da: <a href="https://www.compudiego.com.ar" target="_blank" rel="noopener noreferrer">CompuDiego</a>',
-    clientesTitulo: '<h2 style="text-align: center; color: #4a5a50;">Con <i>fiducia e cuore:</i> cosa dicono i miei clienti</h2>'
+    clientesTitulo: '<h2 style="text-align: center; color: #4a5a50;">Con <i>fiducia e cuore:</i> cosa dicono i miei clienti</h2>',
+        distancia: '<a href="mailto:traductoraitaliano@hotmail.com"><em>Sono a portata di messaggio.</em></a>',
+    queres: 'Vuoi iniziare?'
 
   }
 };
