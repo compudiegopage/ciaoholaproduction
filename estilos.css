@@ -36,6 +36,9 @@ body {
 html {
   scroll-behavior: smooth;
 }
+html[data-lang="it"] .solo-es {
+  display: none;
+}
 
 #inicio {
   text-align: center;
@@ -224,6 +227,9 @@ button[type="submit"] {
   font-size: 1.5rem;
 }
 
+html[data-lang="es"] .solo-italiano {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .hamburger {
@@ -675,7 +681,9 @@ font-family: 'Quattrocento', serif;
   /* align-items: center; */
   text-align: center; /* para centrar el texto, si querés */
   font-size: 1.17rem; /* o el tamaño que uses en las otras secciones */
+  
 }
+
 
 
 
