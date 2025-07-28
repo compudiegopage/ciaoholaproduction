@@ -216,7 +216,7 @@ button[type="submit"] {
 #contacto h2 {
   text-align: center;
   color: #4a5a50;
-  font-size: 3rem;
+  font-size: 2.3rem;
 }
 #contacto h3 {
   text-align: center;
@@ -636,25 +636,29 @@ font-family: 'Quattrocento', serif;
 }
 #servicios4 {
   background-color: var(--carla);
+  font-family: 'Lora', serif;
   padding: 2rem 0; /* solo padding arriba y abajo */
   box-sizing: border-box;
   max-width: 100%;
   margin: 0 auto;
   color: #40514e;
-  font-family: 'Georgia', serif;
   line-height: 1.6;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.serv{
+  font-weight: bold;
+
+}
 
 #servicios4 > h2 {
   text-align: center;
   margin-bottom: 1rem;
-  font-weight: 600;
   font-size: 1.9rem;
   color: #334e42;
   width: 100%;
+
 }
 
 #servicios4 > article.ciudadania-text {
@@ -683,6 +687,7 @@ font-family: 'Quattrocento', serif;
   gap: 1.5rem;
   width: 100%;
   max-width: 900px;
+  padding: 1.5rem;
 }
 
 /* Estilo para cada tarjeta */
@@ -812,11 +817,13 @@ font-family: 'Quattrocento', serif;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
   max-width: 1000px;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
+
 
 .titulo-grande h1 {
   font-size: 2.5rem;
@@ -841,7 +848,7 @@ font-family: 'Quattrocento', serif;
 /* Desktop layout */
 @media (min-width: 769px) {
   .servicios-flex {
-    flex-direction: row;
+    flex-direction: row-reverse; /* CAMBIO CLAVE */
     align-items: stretch;
   }
 
@@ -874,7 +881,6 @@ font-family: 'Quattrocento', serif;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 2rem 1rem;
   max-width: 900px;       /* igual que .cards-container */
   margin: 0 auto;         /* para centrarlo */
   box-sizing: border-box;
@@ -888,11 +894,21 @@ font-family: 'Quattrocento', serif;
 
 .intro-texto,
 .frase-contacto {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-style: italic;
   font-weight: 700;
   line-height: 1.6;
   text-align: center;
+    color: var(--acento, #000);
+
+}
+.frase-contacto {
+  margin-top: 0; /* o un valor pequeño */
+  padding-top: 0; /* o un valor pequeño */
+}
+
+.frase-contacto p {
+  margin-top: 0;
 }
 
 .frase-contacto a {
@@ -975,4 +991,7 @@ font-family: 'Quattrocento', serif;
   .fade-in .texto h2 {
     font-size: 1.7rem;
   }
+}
+[data-key="sobreMiParrafo1"] a {
+  text-decoration: none;
 }
