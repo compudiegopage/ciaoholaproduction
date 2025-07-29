@@ -599,9 +599,7 @@ font-family: 'Quattrocento', serif;
   letter-spacing: 0.02em;
   flex: 1 1 65%;
   text-align: justify;
-    text-align-last: left; /* o right, o start */
-  hyphens: auto; /* permite cortar palabras para mejor ajuste */
-  word-spacing: normal; /
+
 }
 
 
@@ -854,9 +852,7 @@ font-family: 'Quattrocento', serif;
 .texto-servicio p {
   font-family: 'Quattrocento', serif;
   text-align: justify;
-  text-align-last: left; /* o right, o start */
-  hyphens: auto; /* permite cortar palabras para mejor ajuste */
-  word-spacing: normal; 
+
   font-size: 1.2rem;
   line-height: 1.7;
   margin: 0;
@@ -958,9 +954,7 @@ font-family: 'Quattrocento', serif;
 .ciudadania-text {
   text-align: justify;
   font-size: 1.3rem;
-      text-align-last: left; /* o right, o start */
-  hyphens: auto; /* permite cortar palabras para mejor ajuste */
-  word-spacing: normal; /
+
 }
 .solo-pc {
   display: none;
@@ -998,6 +992,36 @@ font-family: 'Quattrocento', serif;
     font-size: 2rem; /* tamaño más chico solo en celulares */
     text-align: center;
   }
+  .ciudadania-text {
+  text-align: justify;
+  font-size: 1.3rem;
+      text-align-last: left; /* o right, o start */
+  hyphens: auto; /* permite cortar palabras para mejor ajuste */
+  word-spacing: normal; /
+}
+.texto-servicio p {
+  font-family: 'Quattrocento', serif;
+  text-align: justify;
+  text-align-last: left; /* o right, o start */
+  hyphens: auto; /* permite cortar palabras para mejor ajuste */
+  word-spacing: normal; 
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+#sobre-mi p[data-key="sobreMiParrafo1"] {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  color: #4a5a50;
+  letter-spacing: 0.02em;
+  flex: 1 1 65%;
+  text-align: justify;
+    text-align-last: left; /* o right, o start */
+  hyphens: auto; /* permite cortar palabras para mejor ajuste */
+  word-spacing: normal; /
+}
 }
 .texto-servicio p[data-key="sobreMiParrafo2"] {
   padding: 0.8rem;                    /* espacio interno a la derecha para que el texto no quede pegado */
