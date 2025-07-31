@@ -230,6 +230,9 @@ button[type="submit"] {
 html[data-lang="es"] .solo-italiano {
   display: none;
 }
+html[data-lang="it"] .solo-español {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .hamburger {
